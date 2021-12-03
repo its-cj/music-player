@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mvItem": "../../components/mvItem/mvItem",
+    "mvChooseBlock": "../../components/mvChooseBlock/mvChooseBlock"
+  }
+}

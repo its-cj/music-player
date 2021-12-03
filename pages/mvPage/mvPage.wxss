@@ -1,0 +1,17 @@
+/* pages/mvPage/mvPage.wxss */
+.mvPageClass{
+  width: 100%;
+  padding: 0 4%;
+  box-sizing: border-box;
+}
+.blockBoxFlot{
+  float: left;
+  margin: 5px 10px;
+}
+.headSet{
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.mvItemBig{
+  margin-bottom: 10px;
+}

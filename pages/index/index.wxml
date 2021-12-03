@@ -1,0 +1,82 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="search-false" bindtap="bindViewTap">
+    <view>
+      <icon type="search"></icon>
+      <view class="font-set">搜索你想听的歌曲</view>
+    </view>
+  </view>
+<!-- 轮播图 -->
+  <view class='swiper'>
+    <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" duration="{{duration}}" interval='{{interval}}' bindchange="bindchange"  circular="{{circular}}" style="height:{{imgheights[current]}}rpx;" indicator-active-color="{{indicatorcolor}}" 	indicator-color="#8B0000">
+    <block wx:for='{{imgList}}' wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" data-id='{{index}}' class="slide-image" mode="widthFix" bindload="imageLoad"/>
+      </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- <view class="swiperClassSet">
+    <swiper autoplay="true" circular>
+      <block wx:for="{{swiperList}}" wx:key="id" wx:for-index="idx">
+        <swiper-item>
+          <image mode="widthFix" src="{{swiperList[idx].pic}}" style="width: 100%;height: auto; display: block;"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view> -->
+
+
+  <!-- 热门音乐 -->
+  <view class="hotMusic-oneBig">
+    <view class="hotMusic-big">
+      <titleName mes="{{mes}}" bind:moreClick="moreClick"></titleName>
+    </view>
+    <view class="index-music">
+      <view class="item-hotmusic" wx:for="{{hotMusic}}" wx:key="musicrid" wx:for-index="idx">
+        <musicTemp mes="{{hotMusic[idx]}}" whoChange="{{idx}}" bind:playMusic="playMusic"></musicTemp>
+      </view>
+    </view>
+  </view>
+  <!-- 最新音乐 -->
+  <view class="newMusic-oneBig">
+    <view class="hotMusic-big">
+      <titleName mes="{{mes2}}" bind:moreClick="moreClick"></titleName>
+    </view>
+    <view class="index-music">
+      <view class="item-hotmusic" wx:for="{{newMusic}}" wx:key="musicrid" wx:for-index="idx">
+        <musicTemp mes="{{newMusic[idx]}}" whoChange="{{idx}}" bind:playMusic="playMusic2"></musicTemp>
+      </view>
+    </view>
+  </view>
+
+  <!-- 推荐歌单 -->
+  <view class="recomMusic-oneBig">
+    <view class="hotMusic-big">
+      <titleName mes="{{mes3}}"></titleName>
+    </view>
+    <view>
+      <view class="item-hotmusic" wx:for="{{recommendMusic}}" wx:key="id" wx:for-index="idx">
+        <recomMusicTemp mes="{{recommendMusic[idx]}}" bind:recomBeClick="recomBeClick"></recomMusicTemp>
+      </view>
+    </view>
+  </view>
+
+  <!-- 排行榜 -->
+  <view class="rankMusic-oneBig">
+    <view class="hotMusic-big">
+      <titleName mes="{{mes4}}"></titleName>
+    </view>
+    <view class="rankMusic-item" wx:for="{{rankMusic}}" wx:key="id" wx:for-index="idx">
+      <rankMusicTemp mes="{{rankMusic[idx]}}" bind:rankBeClick="rankBeClick"></rankMusicTemp>
+    </view>
+  </view>
+
+  <view class="playBtn" wx:if="{{play_temp == true}}">
+  </view>
+
+  <view class="posiClass" wx:if="{{play_temp == true}}">
+    <playMusicBtn mes="{{isPlayMes}}" mesPlay="{{is_play}}" bind:pauseMusicClick="pauseMusicClick" bind:playMusicClick="playMusicClick" bind:routerGoClick="routerGoClick" bind:preMusicClick="preMusicClick" bind:nextMusicClick="nextMusicClick"></playMusicBtn>
+  </view>
+</view>

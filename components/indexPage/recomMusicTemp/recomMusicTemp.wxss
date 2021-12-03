@@ -1,0 +1,56 @@
+/* components/indexPage/recomMusicTemp/recomMusicTemp.wxss */
+/* components/indexPage/musicTemp/musicTemp.wxss */
+.music-temp{
+  display: flex;
+  flex-direction: column;
+}
+.position-set{
+  margin-bottom: 5px;
+}
+.image-demo{
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+  overflow: auto;
+}
+.set-imgnb{
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+.image-demo2{
+  height: 25px;
+  background-color:rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  border-top-right-radius: 10px;
+}
+.set-iconnb{
+  width: 20px;
+  display: block;
+}
+.text-magic{
+  color: white;
+  font-size: 13px;
+}
+.text-musicname{
+  font-size: 14px;
+  color: #444444;
+  
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+

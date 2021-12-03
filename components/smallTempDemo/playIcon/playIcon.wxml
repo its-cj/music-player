@@ -1,0 +1,7 @@
+<!--components/smallTempDemo/playIcon/playIcon.wxml-->
+<view>
+  <view class="image-demo2" style="width: {{boxsize}}px;height: {{boxsize}}px;">
+    <!-- <image src="/imgs/play.png" mode="widthFix" class="img-demo2"></image> -->
+    <image src="/imgs/pause.png" mode="widthFix" class="img-demo3"></image>
+  </view>
+</view>

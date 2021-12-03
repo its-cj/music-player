@@ -1,0 +1,29 @@
+<!--pages/recomMusicPage/recomMusicPage.wxml-->
+<view class="pageme-set">
+  <view class="bg" style="background-image: url({{musicData.data.img}});" wx:if="{{is_rank == false}}"></view>
+  <view class="bg2" wx:else></view>
+
+  <view class="pt">
+    <view wx:if="{{is_rank == false}}">
+      <view>
+        <imgTitleTemp mes="{{musicData.data}}" bindcollectionClick="collectionClick"></imgTitleTemp>
+      </view>
+    </view>
+    <view wx:else>
+      <imgrankTemp mes="{{musicData.data}}"></imgrankTemp>
+    </view>
+
+    <view>
+      <MusicListTemp mes="{{musicData.data}}" bind:musicPlayClickFather="musicPlayClickFather" bind:palyAllMusic="palyAllMusic"></MusicListTemp>
+    </view>
+
+    <view class="playBtn" wx:if="{{is_show == true}}">
+    </view>
+    <view class="posiClass" wx:if="{{is_show == true}}">
+      <playMusicBtn mes="{{isPlayMes}}" mesPlay="{{is_play}}" bind:playMusicClick="playMusicClick" bind:routerGoClick="routerGoClick" bind:pauseMusicClick="pauseMusicClick" bind:preMusicClick="preMusicClick"
+    bind:nextMusicClick="nextMusicClick"></playMusicBtn>
+    </view>
+
+  </view>
+
+</view>

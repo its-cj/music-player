@@ -1,0 +1,62 @@
+/* pages/musicList/musicList.wxss */
+.musiclist-page {
+  width: 100%;
+  background-color: #bfbfbf;
+}
+.music-head {
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.img-set {
+  width: 30%;
+  border-radius: 20px;
+  overflow: auto;
+}
+
+.info-flex {
+  display: flex;
+  align-items: center;
+}
+
+.icon-set {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: auto;
+}
+
+.one-mes {
+  margin-left: 10px;
+}
+
+.one-mestext {
+  font-size: 25px;
+  line-height: 50px;
+}
+
+.name-set {
+  color: black;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+
+.playBtn{
+  height: 50px;
+  width: 100%;
+  background-color: white;
+}
+.posiClass{
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  padding-left: 4%;
+  padding-right: 4%;
+}

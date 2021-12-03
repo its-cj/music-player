@@ -1,0 +1,57 @@
+<!--pages/me/me.wxml-->
+<view class="play-page" wx:if="{{hasUserInfo == true}}" style="background-image: url('../../imgs/IMG_0014.png');">
+  <!-- <view class="virtual" style="background-image: url('../../imgs/IMG_0014.png');"></view> -->
+  <view class="common">
+    <view class="headTemp-use">
+      <headTemp mes="{{userInfo}}" num="{{num}}"></headTemp>
+    </view>
+    <view class="mesitem-nb">
+      <view class="item-one" wx:for="{{pageMes}}" wx:key="*this" wx:for-index="idx">
+        <itemTemp mes="{{pageMes[idx]}}" bind:isLastClick="isLastClick" bind:addSongList="addSongList"></itemTemp>
+      </view>
+    </view>
+
+
+    <view class="playBtn" wx:if="{{is_show == true}}">
+    </view>
+    <view class="posiClass" wx:if="{{is_show == true}}">
+      <playMusicBtn mes="{{isPlayMes}}" mesPlay="{{is_play}}" bind:playMusicClick="playMusicClick" bind:routerGoClick="routerGoClick" bind:pauseMusicClick="pauseMusicClick" bind:preMusicClick="preMusicClick" bind:nextMusicClick="nextMusicClick"></playMusicBtn>
+    </view>
+  </view>
+
+</view>
+
+<view class="play-page" wx:else style="background-image: url('../../imgs/bg.png');">
+  <!-- <view class="virtual2" style="background-image: url('../../imgs/IMG_0014.png');"></view> -->
+  <view class="common2">
+    <view class="headTemp-use2">
+      <headTemp mes="{{noLogin}}" bind:loginClick="loginClick"></headTemp>
+    </view>
+    <view class="text-nb">
+      <view class="in-image">
+        <image mode="widthFix" src="../../imgs/雪人2.png" class="img-nbset"></image>
+      </view>
+      <view class="conner-temp">
+        登录后可查看
+      </view>
+      <view class="conner-temp">
+        喜欢的音乐、歌单、创建歌单~
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="space-view" wx:if="{{spaceView == true}}">
+  <view bindtap="spaceBtnClick" class="grey-page"></view>
+  <view class="catchBtn">
+    <view class="btn-title">音乐歌单</view>
+    <view class="btn-connr">
+      <input type="text" placeholder="输入新建歌单标题" class="btn-input" bindinput="bindKeyInput" />
+    </view>
+    <view class="btn-flex" catchtap="smallSpace">
+      <view class="btn-btncancel" catchtap="cancelClick">取消</view>
+      <view class="btn-btncenter"></view>
+      <view class="btn-btnok" catchtap="okClick">确定</view>
+    </view>
+  </view>
+</view>

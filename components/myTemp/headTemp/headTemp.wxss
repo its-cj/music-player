@@ -1,0 +1,33 @@
+/* components/myTemp/headTemp/headTemp.wxss */
+.headTemp{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.head-img{
+  width: 100%;
+  display: block;
+}
+.ht-flex1{
+  width: 80px;
+  height: 80px;
+  overflow: auto;
+  border-radius: 50%;
+}
+.ht-flex2{
+  font-size: 20px;
+  margin-left: 20px;
+}
+.small-text{
+  display: flex;
+  font-size: 12px;
+  color: #2c2b2b;
+  /* transform: scale(0.6); */
+}
+.name-set{
+  color: black;
+}
+.flex-nb{
+  margin-right: 10px;
+  text-align: center;
+}

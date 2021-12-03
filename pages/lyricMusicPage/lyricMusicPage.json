@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "circularIcon": "../../components/smallTempDemo/circularIcon/circularIcon",
+    "playIcon": "../../components/smallTempDemo/playIcon/playIcon"
+  }
+}

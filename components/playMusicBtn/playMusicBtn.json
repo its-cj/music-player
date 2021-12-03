@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "circularIcon": "../smallTempDemo/circularIcon/circularIcon"
+  }
+}

@@ -1,0 +1,11 @@
+/* pages/mvPlay/mvPlay.wxss */
+.mvPlayClass{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+#myVideo{
+  width: 100%
+}

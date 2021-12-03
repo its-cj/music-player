@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "MusicListTemp": "../../components/MusicListTemp/MusicListTemp",
+    "imgTitleTemp": "../../components/imgTitleTemp/imgTitleTemp",
+    "imgrankTemp": "../../components/imgrankTemp/imgrankTemp",
+    "playMusicBtn": "../../components/playMusicBtn/playMusicBtn"
+  }
+}

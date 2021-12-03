@@ -1,0 +1,53 @@
+/* components/indexPage/musicTemp/musicTemp.wxss */
+.music-temp{
+  display: flex;
+  flex-direction: column;
+}
+.image-demo{
+  width: 100%;
+  position: relative;
+}
+.img-demo1{
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+.image-demo2{
+  width: 25px;
+  height: 25px;
+  background-color:rgba(0,0,0,0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.img-demo3{
+  width: 40%;
+  display: block;
+}
+.img-demo2{
+  width: 70%;
+  display: block;
+}
+.text-musicname{
+  font-size: 14px;
+  color: #444444;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-writername{
+  font-size: 12px;
+  color: #bfbfbf;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.position-set{
+  margin-bottom: 5px;
+}
+

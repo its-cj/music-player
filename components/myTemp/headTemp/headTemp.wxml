@@ -1,0 +1,19 @@
+<!--components/myTemp/headTemp/headTemp.wxml-->
+<view class="headTemp">
+  <view class="ht-flex1">
+    <image src="{{mes.avatarUrl}}" mode="widthFix" class="head-img"></image>
+  </view>
+  <view class="ht-flex2">
+    <view class="name-set" catchtap="loginClick">{{mes.nickName}}</view>
+    <view class="small-text">
+      <view class="flex-nb">
+        <view>累计听歌</view>
+        <view>{{num.listenNum}}</view>
+      </view>
+      <view class="flex-nb">
+        <view>收藏歌单</view>
+        <view>{{num.collectionNum}}</view>
+      </view>
+    </view>
+  </view>
+</view>

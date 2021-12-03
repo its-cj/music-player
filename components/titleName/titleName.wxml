@@ -1,0 +1,11 @@
+<!--components/titleName/titleName.wxml-->
+<view class="titleName-big">
+  <view class="demo1-view">{{mes.titlename}}</view>
+  <view class="demo2-view"></view>
+  <view class="demo3-view" catchtap="moreClick">
+    <text>{{mes.titlename2}}</text>
+    <view class="icon-set" wx:if="{{mes.icon}}">
+       <image src="{{mes.src}}" class="img-icon"></image>
+    </view>
+  </view>
+</view>

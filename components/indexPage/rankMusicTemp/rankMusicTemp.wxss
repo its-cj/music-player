@@ -1,0 +1,36 @@
+/* components/indexPage/rankMusicTemp/rankMusicTemp.wxss */
+.rankMusicTemp-one{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  
+}
+.rankMusicTemp-flex1{
+  flex: 1;
+  border-radius: 20px;
+  overflow: auto;
+}
+.img-demo1{
+  width: 100%;
+  display: block;
+}
+.rankMusicTemp-flex2{
+  flex: 2;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.ranktext-one{
+  font-size: 18px;
+  color: black;
+  margin-bottom: 5px;
+}
+.ranktext-two{
+  font-size: 12px;
+  color: #bfbfbf;
+  margin-bottom: 5px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<view class="login-big">
+  <view class="flex-one">
+    <view class="title-set">
+      <image mode="widthFix" class="img-set" src="../../imgs/logo.png"></image>
+    </view>
+    <view class="login-open login" catchtap="wxLoginClick">微信登录</view>
+    <view class="login-open phone" catchtap="wxLoginClick">手机号一键登录</view>
+    <view class="login-open message" catchtap="wxLoginClick">验证码登录</view>
+    <view class="login-open message" catchtap="wxLoginClick">密码登录</view>
+    <view class="text-nb">
+      <view class="check-box" catchtap="checkClick" wx:if="{{checkClickPro == false}}">
+      </view>
+      <view class="check-box2" catchtap="checkClick" wx:else>
+      </view>
+      首次登录会自动创建新账号，且代表同意<text class="span-change">《用户服务协议》</text>和<text class="span-change">《隐私协议》</text>
+    </view>
+  </view>
+</view>

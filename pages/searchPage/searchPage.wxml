@@ -1,0 +1,37 @@
+<!--pages/searchPage/searchPage.wxml-->
+<view class="page-set">
+  <view class="top-set">
+    <view class="input-set">
+      <input class="weui-input" auto-focus placeholder="搜索你想听的歌曲" class="ipt-search" value='{{keyAndValue}}' bindinput="bindKeyInput" />
+    </view>
+    <view class="btn-search" catchtap="searchClick">搜索</view>
+  </view>
+
+  <view wx:if="{{musicArr.length == 0}}" class="likeTo">
+    <view class="flex-tilte">
+      <view class="font-set">搜索历史</view>
+      <view class="spaceNull"></view>
+      <view class="font-set2" catchtap="claerBtn">清除</view>
+    </view>
+    <view class="serch-history" wx:if="{{searchHistory.length > 0}}">
+      <view class="serch-item" wx:for="{{searchHistory}}" wx:key="*this" wx:for-index="idx" catchtap="clickHistory" data-bean="{{searchHistory[idx]}}">{{searchHistory[idx]}}</view>
+    </view>
+    <view wx:else class="tipMess">
+      还没有搜索的内容哦，快来搜索吧~
+    </view>
+  </view>
+
+  <view wx:else>
+    <view class="search-conn" wx:for="{{musicArr}}" wx:key="rid" wx:for-index="idx">
+      <itemList num="{{idx + 1}}" mes="{{musicArr[idx]}}" bind:nbClick="nbClick"></itemList>
+    </view>
+  </view>
+
+  <view class="playBtn" wx:if="{{is_show == true}}">
+  </view>
+  <view class="posiClass" wx:if="{{is_show == true}}">
+    <playMusicBtn mes="{{isPlayMes}}" mesPlay="{{is_play}}" bind:playMusicClick="playMusicClick" bind:routerGoClick="routerGoClick"  bind:pauseMusicClick="pauseMusicClick" bind:preMusicClick="preMusicClick"
+    bind:nextMusicClick="nextMusicClick"></playMusicBtn>
+  </view>
+
+</view>

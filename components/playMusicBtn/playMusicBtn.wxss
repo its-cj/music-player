@@ -1,0 +1,28 @@
+/* components/playMusicBtn/playMusicBtn.wxss */
+.playMusic-btn{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.img-flex{
+  display: flex;
+  align-items: center;
+}
+.icon-set{
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.btn-flex1{
+  display: flex;
+  align-items: center;
+}
+.tb-flex{
+  flex:1;
+}
+.icon-set2{
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}

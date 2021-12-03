@@ -1,0 +1,23 @@
+<!--components/imgrankTemp/imgrankTemp.wxml-->
+<view class="rankimgTemp">
+
+  <view wx:if="{{mes.img == null}}" class="rank-big">
+    <view class="rankimg-two">
+      <view class="ranktext-demo">你坚持的东西</view>
+      <view class="ranktext-demo">终有一天会过来拥抱你❤️</view>
+    </view>
+    <view class="ranktext-demo">
+      2021-11-22
+    </view>
+  </view>
+
+  <view wx:else class="rank-big">
+    <view class="rankimg-one">
+      <image src="{{mes.img}}" mode="widthFix" class="img-demoset"></image>
+    </view>
+    <view class="ranktext-demo">
+      {{mes.pub}}
+    </view>
+  </view>
+
+</view>

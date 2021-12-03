@@ -1,0 +1,32 @@
+<!--pages/musicList/musicList.wxml-->
+<view class="musiclist-page">
+  <view class="music-head">
+    <view class="img-set" wx:if="{{mes.img == false}}">
+      <image mode="widthFix" src="../../imgs/tw.png" style="display: block;width: 100%;"></image>
+    </view>
+    <view class="img-set" wx:else>
+      <image mode="widthFix" src="{{mes.img}}" style="display: block;width: 100%;"></image>
+    </view>
+
+    <view class="one-mes">
+      <view class="one-mestext">{{mes.name}}</view>
+      <view class="info-flex">
+        <view class="icon-set">
+          <image mode="widthFix" src="{{userInfo.avatarUrl}}" style="width: 100%;display: block;"></image>
+        </view>
+        <view class="name-set">{{userInfo.nickName}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="music-list">
+    <MusicListTemp mes="{{musicMes}}" bind:musicPlayClickFather="musicPlayClickFather" bind:palyAllMusic="palyAllMusic"></MusicListTemp>
+  </view>
+
+
+  <view class="playBtn" wx:if="{{is_show == true}}">
+  </view>
+  <view class="posiClass" wx:if="{{is_show == true}}">
+    <playMusicBtn mes="{{isPlayMes}}" mesPlay="{{is_play}}" bind:playMusicClick="playMusicClick" bind:routerGoClick="routerGoClick"  bind:pauseMusicClick="pauseMusicClick" bind:preMusicClick="preMusicClick"
+    bind:nextMusicClick="nextMusicClick"></playMusicBtn>
+  </view>
+</view>

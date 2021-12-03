@@ -1,0 +1,26 @@
+/* components/titleName/titleName.wxss */
+.titleName-big{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.demo1-view{
+  font-size: 20px;
+}
+.demo2-view{
+  flex: 1;
+}
+.demo3-view{
+  font-size: 12px;
+  color: #bfbfbf;
+  display: flex;
+  align-items: center;
+}
+.icon-set{
+  width: 15px;
+  height: 15px;
+}
+.img-icon{
+  width: 15px;
+  height: 15px;
+}

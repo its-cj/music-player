@@ -1,0 +1,21 @@
+<!--pages/mvPage/mvPage.wxml-->
+<view class="mvPageClass">
+  <!-- <view class="itemClass">
+    <view class="itemName" wx:for="{{itemName}}" wx:key="*this" wx:for-index="idx" catchtap="routClickFn" data-bean="{{itemName[idx]}}">{{itemName[idx]}}</view>
+  </view> -->
+  <view class="headSet">
+    <view wx:for="{{itemName}}" wx:key="rid" wx:for-index="idx" class="blockBoxFlot">
+      <mvChooseBlock mes='{{itemName[idx]}}' num="{{num}}" whoIdx='{{idx}}' bind:boxChooseClick="boxChooseClick"></mvChooseBlock>
+    </view>
+  </view>
+
+
+  <view>
+    
+    <view wx:for="{{itemMv}}" wx:for-index="idx" wx:key="id" class="mvItemBig">
+      <mvItem bind:playClickMv="playClickMv" mes="{{itemMv[idx]}}"></mvItem>
+    </view>
+
+  </view>
+
+</view>

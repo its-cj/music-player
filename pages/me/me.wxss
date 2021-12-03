@@ -1,0 +1,175 @@
+/* pages/me/me.wxss */
+.play-page{
+  height: 100vh;
+  background-color: #e6e6e6;
+  background-position: center;
+  background-size: cover;
+}
+.virtual {
+  float: left;
+  width: 100vw;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(0px);
+}
+.virtual2 {
+  float: left;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(10px);
+}
+
+.common {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: 100vh;
+  overflow:scroll;
+}
+
+.headTemp-use {
+  padding: 4%;
+}
+
+.mesitem-nb {
+  background-color: #e6e6e6;
+  border-top-left-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.item-one{
+  border-radius: 10px;
+  overflow: auto;
+  width: 92%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.conner-temp{
+  margin: 0 auto;
+  text-align: center;
+  color: #801010;
+}
+.text-nb{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.common2 {
+  width: 100vW;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.in-image{
+  padding-top: 30px;
+  margin-bottom: 10px;
+  width: 30%;
+  margin: 0 auto;
+}
+.img-nbset{
+  display: block;
+  width: 100%;
+}
+.headTemp-use2 {
+  padding: 4%;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+
+.space-view{
+  background-color:rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.grey-page{
+  background-color:rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  width: 100vw;
+}
+.catchBtn{
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 4%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  top: 100px;
+
+}
+.btn-title{
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.btn-connr{
+  margin-bottom: 20px;
+}
+.btn-input{
+  width: 90%;
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  height: 20px;
+  text-align: center;
+}
+.btn-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-btncancel{
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #e6e6e6;
+  border-radius: 15px;
+}
+.btn-btnok{
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(2, 168, 2);
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+.btn-btncenter{
+  width: 30px;
+}
+
+
+.playBtn{
+  height: 50px;
+  width: 100%;
+}
+.posiClass{
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  padding-left: 4%;
+  padding-right: 4%;
+}

@@ -1,0 +1,20 @@
+<!--components/myTemp/itemTemp/itemTemp.wxml-->
+<view class="itemTemp">
+  <view class="flexone-it">
+    <view class="text-flex1">{{mes.title}}</view>
+    <view class="null-flex2"></view>
+    <view class="img-flex3" wx:if="{{mes.add == true}}" catchtap="addSongList">
+      <image src="../../../imgs/add.png" class="img-set" mode="widthFix"></image>
+    </view>
+  </view> 
+  <view>
+    <view wx:if="{{mes.list.length < 1}}" class="null-cont">
+      <view>暂无内容</view>
+    </view>
+    <view wx:else>
+      <view class="temp-set" wx:for="{{mes.list}}" wx:key="info" wx:for-index="idx">
+        <itemMesTemp mes="{{mes.list[idx]}}" bind:collectionClick="isNbClick"></itemMesTemp>
+      </view>
+    </view>
+  </view>
+</view>

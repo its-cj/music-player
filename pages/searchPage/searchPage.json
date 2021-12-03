@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "itemList": "../../components/itemList/itemList",
+    "playMusicBtn": "../../components/playMusicBtn/playMusicBtn"
+  }
+}

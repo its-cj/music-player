@@ -1,0 +1,38 @@
+/* components/myTemp/itemTemp/itemTemp.wxss */
+.itemTemp{
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  padding:4%;
+}
+.flexone-it{
+  width: 100%;
+  display: flex;
+  align-items:center;
+  /* margin-bottom: 10px; */
+}
+.text-flex1{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.null-flex2{
+  flex:1;
+}
+.img-flex3{
+  width: 20px;
+  height: 20px;
+}
+.img-set{
+  width: 100%;
+  display: block;
+}
+.temp-set{
+margin-bottom: 10px;
+}
+.null-cont{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  text-align: center;
+  color: #bfbfbf;
+}

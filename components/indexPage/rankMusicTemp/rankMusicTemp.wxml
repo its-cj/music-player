@@ -1,0 +1,14 @@
+<!--components/indexPage/rankMusicTemp/rankMusicTemp.wxml-->
+<view class="rankMusicTemp-one" catchtap="rankClick">
+  <view class="rankMusicTemp-flex1">
+    <view>
+      <image src="{{mes.pic}}" mode="widthFix" class="img-demo1"></image>
+    </view>
+  </view>
+  <view class="rankMusicTemp-flex2">
+    <view class="ranktext-one">{{mes.leader}} ></view>
+    <view class="ranktext-two">1.{{mes.musicList[0].name}}</view>
+    <view class="ranktext-two">2.{{mes.musicList[1].name}}</view>
+    <view class="ranktext-two">3.{{mes.musicList[2].name}}</view>
+  </view>
+</view>

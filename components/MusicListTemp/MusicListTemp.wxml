@@ -1,0 +1,19 @@
+<!--components/MusicListTemp/MusicListTemp.wxml-->
+<view class="musiclist-temp">
+  <view class="ml-flex">
+    <view class="ml-text" wx:if="{{mes.num == null}}">共{{mes.total}}首歌曲</view>
+    <view class="ml-text" wx:else>共{{mes.num}}首歌曲</view>
+    <view class="ml-icon">
+      <view class="icon-big">
+        <view class="icon-left">
+          <image src="../../imgs/play2.png" mode="widthFix" class="icon-imgset"></image>
+        </view>
+        <view class="icon-right" catchtap="palyAllMusic">播放全部</view>
+      </view>
+    </view>
+  </view>
+
+  <view wx:for="{{mes.musicList}}" wx:key="rid" wx:for-index="idx" class="item-set">
+    <musicItemTemp musicMes="{{mes.musicList[idx]}}" num="{{idx + 1}}" bind:musicPlayClick="musicPlayClick"></musicItemTemp>
+  </view>
+</view>

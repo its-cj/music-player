@@ -1,0 +1,99 @@
+/* pages/searchPage/searchPage.wxss */
+.page-set {
+  width: 100%;
+  margin: 0 auto;
+}
+.top-set {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.input-set {
+  flex: 1;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: auto;
+  margin-right: 10px;
+  background-color: #eee;
+}
+
+.ipt-search {
+  padding-left: 20px;
+  color: #888888;
+  font-size: 13px;
+  line-height: 20px;
+}
+.likeTo,.search-conn{
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.btn-search {
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #888;
+}
+
+
+.flex-tilte {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.spaceNull {
+  flex: 1;
+}
+
+.font-set {
+  font-size: 20px;
+  line-height: 30px;
+  color: black;
+}
+.font-set2{
+  font-size: 12px;
+  color: #888;
+}
+.serch-history{
+  overflow: hidden;
+}
+.serch-item{
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  /* display: inline-block; */
+  padding: 2px 6px;
+  border-radius: 20px;
+  background-color: #eeeeee;
+  color: black;
+  line-height: 20px;
+  text-align: center;
+}
+.playBtn{
+  height: 50px;
+  width: 100%;
+  background-color: white;
+}
+.posiClass{
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.tipMess{
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+  color: #acacac;
+  font-size: 12px;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "MusicListTemp": "../../components/MusicListTemp/MusicListTemp",
+    "playMusicBtn": "../../components/playMusicBtn/playMusicBtn"
+  }
+}

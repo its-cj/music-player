@@ -1,0 +1,46 @@
+/* components/musicItemTemp/musicItemTemp.wxss */
+.item-temp{
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.item-flexone{
+  margin-right: 4%;
+  color: #8a8a8a;
+}
+.item-flextwo{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.twoflex-two{
+  font-size: 12px;
+  color: #bfbfbf;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item-flexthree{
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.icon-set{
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(211, 211, 211);
+}
+.img-set{
+  width: 100%;
+  display: block;
+}
+.img-set2{
+  width: 50%;
+  display: block;
+}

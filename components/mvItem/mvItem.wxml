@@ -1,0 +1,10 @@
+<!--components/mvItem/mvItem.wxml-->
+<view class="mvItemClass" catchtap="playClickMv">
+    <view class="mvImage">
+      <image mode="widthFix" src="{{mes.pic}}" style="display: block;width: 100%;"></image>
+    </view>
+    <view class="textConner">
+      <view class="markName">{{mes.artist}}</view>
+      <view class="artistName">{{mes.name}}</view>
+    </view>
+  </view>

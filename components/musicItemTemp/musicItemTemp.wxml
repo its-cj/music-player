@@ -1,0 +1,17 @@
+<!--components/musicItemTemp/musicItemTemp.wxml-->
+<view class="item-temp" catchtap="musicPlayClick">
+  <view class="item-flexone">{{num}}</view>
+  <view class="item-flextwo">
+    <view class="twoflex-one" wx:if="{{musicMes.name}}">{{musicMes.name}}</view>
+    <view class="twoflex-one" wx:else>{{musicMes.songName}}</view>
+    <view class="twoflex-two">{{musicMes.artist}} - {{musicMes.album}}</view>
+  </view>
+  <view class="item-flexthree">
+    <view class="icon-set" wx:if="{{musicMes.is_play == false}}">
+      <image src="../../imgs/play.png" mode="widthFix" class="img-set"></image>
+    </view>
+    <view class="icon-set" wx:else>
+      <image src="../../imgs/pause.png" mode="widthFix" class="img-set2"></image>
+    </view>
+  </view>
+</view>

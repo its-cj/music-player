@@ -1,0 +1,11 @@
+<!--pages/mvPlay/mvPlay.wxml-->
+<view class="mvPlayClass">
+  <video 
+      id="myVideo" 
+      src="{{path}}" 
+      autoplay
+      loop
+      controls
+      enable-auto-rotation
+    ></video>
+</view>

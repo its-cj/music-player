@@ -1,0 +1,12 @@
+/* components/mvChooseBlock/mvChooseBlock.wxss */
+.itemClass{
+  width: 100%;
+  overflow: hidden;
+}
+.itemName2{
+  padding: 4px 10px;
+}
+.itemName{
+  padding: 4px 10px;
+  background-color: #bfbfbf;
+}

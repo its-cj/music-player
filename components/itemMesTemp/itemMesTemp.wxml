@@ -1,0 +1,13 @@
+<!--components/itemMesTemp/itemMesTemp.wxml-->
+<view class="imtTemp" catchtap="collectionClick">
+  <view class="imt-flex1" wx:if="{{mes.img == false}}">
+    <image mode="widthFix" src="../../imgs/music.png" class="imt-img6"></image>
+  </view>
+  <view class="imt-flex1" wx:else>
+    <image mode="widthFix" src="{{mes.img}}" class="imt-img6"></image>
+  </view>
+  <view class="imt-flex2">
+    <view class="flex2-one">{{mes.name}}</view>
+    <view class="flex2-two">{{mes.total}}首 {{mes.userName}}</view>
+  </view>
+</view>

@@ -1,0 +1,41 @@
+<!--components/imgTitleTemp/imgTitleTemp.wxml-->
+<view class="imgtitle">
+  <view class="flex-one">
+    <view class="img-set">
+      <image src="{{mes.img}}" mode="widthFix" class="img-demoset"></image>
+    </view>
+    <view class="right-temp">
+      <view class="kuaiji-temp" catchtap="collectionClick">
+        <view class="img-set2">
+          <image src="../../imgs/收藏选中.png" mode="widthFix" class="img-xiangtu"></image>
+        </view>
+        <view class="texttitle-set">收藏</view>
+      </view>
+      <view class="midel"></view>
+      <view class="kuaiji-temp">
+        <view class="img-set2">
+          <image src="../../imgs/intro.png" mode="widthFix" class="img-xiangtu"></image>
+        </view>
+        <view class="texttitle-set">简介</view>
+      </view>
+      <view class="midel"></view>
+      <view class="kuaiji-temp">
+        <view class="img-set3">
+          <image src="../../imgs/wx.png" mode="widthFix" class="img-xiangtu2"></image>
+        </view>
+        <view class="texttitle-set">分享</view>
+      </view>
+    </view>
+  </view>
+  <view class="flex-two">
+    <view class="imgTitle-text1">{{mes.name}}</view>
+  </view>
+  <view class="flex-three">
+    <view class="img-set4">
+      <image src="{{mes.uPic}}" mode="widthFix" class="img-demoset2"></image>
+    </view>
+    <view class="imgTitle-text2">
+      {{mes.userName}}
+    </view>
+  </view>
+</view>

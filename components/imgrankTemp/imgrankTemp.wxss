@@ -1,0 +1,44 @@
+/* components/imgrankTemp/imgrankTemp.wxss */
+.rankimgTemp {
+  width: 100%;
+  padding-bottom: 20px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+.rank-big{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rankimg-one {
+  border-radius: 20px;
+  overflow: auto;
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.rankimg-two {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.img-demoset {
+  width: 100%;
+  display: block;
+}
+.img-demoset2 {
+  width: 100%;
+  display: block;
+  opacity: 0.7;
+}
+.ranktext-demo{
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}

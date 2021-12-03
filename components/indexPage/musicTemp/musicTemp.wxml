@@ -1,0 +1,15 @@
+<!--components/indexPage/musicTemp/musicTemp.wxml-->
+<view class="music-temp">
+  <view class="position-set">
+    <view class="image-demo">
+      <image src="{{mes.pic}}" mode="widthFix" class="img-demo1"></image>
+      <view class="image-demo2" catchtap="musicPlayTap">
+        <image wx:if="{{mes.is_click == false}}" src="/imgs/play.png" mode="widthFix" class="img-demo2"></image>
+        <image wx:else src="/imgs/pause.png" mode="widthFix" class="img-demo3"></image>
+      </view>
+    </view>
+    
+  </view>
+  <view class="text-musicname">{{mes.name}}</view>
+  <view class="text-writername">{{mes.artist}}</view>
+</view>

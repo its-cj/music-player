@@ -1,0 +1,14 @@
+<!--components/indexPage/recomMusicTemp/recomMusicTemp.wxml-->
+<!--components/indexPage/musicTemp/musicTemp.wxml-->
+<view class="music-temp" catchtap="recomClick">
+  <view class="position-set">
+    <view class="image-demo">
+      <image src="{{mes.img}}" mode="widthFix" class="set-imgnb"></image>
+      <view class="image-demo2">
+        <image src="/imgs/play.png" mode="widthFix" class="set-iconnb"></image>
+        <view class="text-magic">{{mes.listencnt}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="text-musicname">{{mes.name}}</view>
+</view>

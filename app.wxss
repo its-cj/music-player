@@ -1,0 +1,9 @@
+/**app.wxss**/
+.container {
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 10px;
+  background-color: rgb(240, 240, 240);
+} 

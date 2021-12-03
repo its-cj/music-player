@@ -1,0 +1,8 @@
+<!--components/itemList/itemList.wxml-->
+<view class="item-block" catchtap="bindClick">
+        <view class="item-num">{{num}}</view>
+        <view class="item-music">
+          <view class="item-art">{{mes.name}}</view>
+          <view class="item-name">{{mes.artist}}-{{mes.album}}</view>
+        </view>
+      </view>

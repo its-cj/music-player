@@ -1,0 +1,5 @@
+<!--components/mvChooseBlock/mvChooseBlock.wxml-->
+<view class="itemClass" catchtap="boxChooseClick">
+  <view class="itemName" wx:if="{{num == whoIdx}}">{{mes.nick}}</view>
+  <view class="itemName2" wx:else>{{mes.nick}}</view>
+</view>

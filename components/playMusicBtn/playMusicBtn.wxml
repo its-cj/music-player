@@ -1,0 +1,25 @@
+<!--components/playMusicBtn/playMusicBtn.wxml-->
+<view class="playMusic-btn" catchtap="routerGoClick">
+  <view class="btn-flex1">
+    <view class="icon-set2">
+      <circularIcon mes="{{mes.pic}}"></circularIcon>
+    </view>
+  <view wx:if="{{mes.songName}}">{{mes.songName}}</view>
+  <view wx:else>{{mes.name}}</view>
+  </view>
+  <view class="tb-flex"></view>
+  <view class="img-flex">
+    <view class="icon-set" catchtap="preMusicClick">
+      <circularIcon mes="../../../imgs/上一曲.png"></circularIcon>
+    </view>
+    <view class="icon-set" wx:if="{{mesPlay == false}}" catchtap="pauseMusicClick">
+      <circularIcon mes="../../../imgs/24gf-play.png"></circularIcon>
+    </view>
+    <view class="icon-set" wx:else>
+      <circularIcon mes="../../../imgs/24gf-pause2.png" catchtap="playMusicClick" ></circularIcon>
+    </view>
+    <view class="icon-set" catchtap="nextMusicClick">
+      <circularIcon mes="../../../imgs/下一曲.png"></circularIcon>
+    </view>
+  </view>
+</view>

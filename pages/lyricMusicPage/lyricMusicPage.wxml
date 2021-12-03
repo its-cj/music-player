@@ -1,0 +1,71 @@
+<view class="play-page">
+  <view class="virtual" style="background-image: url({{data.pic}});"></view>
+  <view class="common">
+    <view class="common-one">
+      <circularIcon mes="{{data.pic}}"></circularIcon>
+    </view>
+    <scroll-view scroll-y="true" class="lyric" id="lyricNb" scroll-x="false" enable-flex="true" enhanced="true" show-scrollbar="false" scroll-top="{{scrollViewPosition}}">
+      <view wx:for="{{geci_arr}}" wx:key="*this" wx:for-index="idx" class="lyric-external">
+        <view class="lyric-inner" wx:if="{{geci_num[idx] == 1}}">{{geci_arr[idx]}}</view>
+        <view class="lyric-inner2" wx:else>{{geci_arr[idx]}}</view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="cando-btn">
+    <view class="cando-top">
+      <view class="time-set">{{timeCurrent}}</view>
+      <view class="progress-set">
+        <slider class="slider-set" activeColor='#39D3FF' block-size='12' bindchange="endDrop" bindchanging="movingDrop" value='{{musicPercent}}' step='{{stepMusic}}'/>
+      </view>
+      <view class="time-set">{{data.songTimeMinutes}}</view>
+    </view>
+    <view class="cando-bottom">
+      <view class="img-one" catchtap="loveClick">
+        <image src="../../imgs/love.png" mode="widthFix" class="img-set"></image>
+      </view>
+      <view class="canno-do"></view>
+      <view class="cando-anthor">
+        <view class="img-one" catchtap="preClick">
+          <image src="../../imgs/iov-pre.png" mode="widthFix" class="img-set"></image>
+        </view>
+        <view class="canno-doing"></view>
+        <view class="img-oneplay" wx:if="{{is_play == false}}" catchtap="playMusic">
+          <image src="../../imgs/play.png" mode="widthFix" class="img-set"></image>
+        </view>
+        <view class="img-oneplay" wx:else catchtap="pauseMusic">
+          <image src="../../imgs/pauseTwo.png" mode="widthFix" class="img-set"></image>
+        </view>
+        <view class="canno-doing"></view>
+        <view class="img-one" catchtap="nextClick">
+          <image src="../../imgs/iov-next.png" mode="widthFix" class="img-set"></image>
+        </view>
+      </view>
+      <view class="canno-do"></view>
+      <view class="img-one" catchtap="cellectClick">
+        <image src="../../imgs/add2.png" mode="widthFix" class="img-set"></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="space-view" wx:if="{{spaceView == true}}">
+  <view bindtap="spaceBtnClick" class="grey-page"></view>
+  <view class="catchBtn">
+    <view class="btn-title">选择要添加到的音乐歌单</view>
+    <view class="btn-connr">
+      <checkbox-group bindchange="checkboxChange">
+        <view class="label-text" wx:for="{{selfSongList}}" wx:key="{{title}}" wx:for-index="idx">
+          <view class="weui-cell__hd">
+            <checkbox value="{{selfSongList[idx].id}}"/>
+          </view>
+          <view class="weui-cell__bd">{{selfSongList[idx].title}}-共{{selfSongList[idx].musicList.length}}首歌</view>
+        </view>
+      </checkbox-group>
+    </view>
+    <view class="btn-flex" catchtap="smallSpace">
+      <view class="btn-btncancel" catchtap="cancelClick">取消</view>
+      <view class="btn-btncenter"></view>
+      <view class="btn-btnok" catchtap="okClick">确定</view>
+    </view>
+  </view>
+</view>

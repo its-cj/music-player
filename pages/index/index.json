@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "firstPage": "/components/firstPage/firstPage",
+    "titleName": "/components/titleName/titleName",
+    "musicTemp": "/components/indexPage/musicTemp/musicTemp",
+    "recomMusicTemp": "/components/indexPage/recomMusicTemp/recomMusicTemp",
+    "rankMusicTemp": "/components/indexPage/rankMusicTemp/rankMusicTemp",
+    "playMusicBtn": "/components/playMusicBtn/playMusicBtn"
+  }
+}

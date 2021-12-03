@@ -1,0 +1,6 @@
+<!--components/smallTempDemo/circularIcon/circularIcon.wxml-->
+<view class="cirIcon-big">
+<view class="cirIcon-view">
+  <image src="{{mes}}" class="cirIcon-img" mode="widthFix"></image>
+</view>
+</view>
