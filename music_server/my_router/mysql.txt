@@ -1,0 +1,79 @@
+create database if not exists musicInfo default character set utf8 collate utf8_general_ci;
+
+
+create table user (
+    id INT(8) primary key auto_increment,
+    name varchar(50),     
+    img longtext,     
+    nickname varchar(20)
+    ) engine=InnoDB DEFAULT CHARSET=utf8;
+
+
+create table userMusicList (
+    id INT(8) primary key auto_increment,
+    userId varchar(50),     
+    musicMes longtext
+    ) engine=InnoDB DEFAULT CHARSET=utf8;
+
+    DELETE FROM userMusicList WHERE id=1;
+    ALTER TABLE   selfSongMes   ADD musicId varchar(50);
+
+
+
+
+create table userEnjoyList (
+    id INT(8) primary key auto_increment,
+    userId varchar(50),     
+    musicMes longtext
+    ) engine=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+
+create table collectionSongSheet (
+    id INT(8) primary key auto_increment,
+    userId varchar(50),    
+    songSheetMes longtext
+    ) engine=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+create table selfmakeSongSheet (
+    id INT(8) primary key auto_increment,
+    userId varchar(50),    
+    title varchar(20),
+    songSheetArr longtext
+    ) engine=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+create table selfSongMes (
+    id INT(8) primary key auto_increment,  
+    aboutId varchar(20),
+    songMes longtext
+    ) engine=InnoDB DEFAULT CHARSET=utf8;
+    
+
+
+    [{name: '花海',
+    artist: '周杰伦',
+    id: 440615,
+    hasmv: 1,
+    pic: 'https://img3.kuwo.cn/star/albumcover/500/72/44/3648126291.jpg',
+    myThink: '超过78%的人播放',
+    is_show: 'specail'},
+    {name: '独家记忆',
+    artist: '陈小春',
+    id: 381027,
+    hasmv: 1,
+    pic: 'https://img2.kuwo.cn/star/albumcover/500/47/8/4198334693.jpg',
+    myThink: '有关于你绝口不提',
+    is_show: 'nomal'},
+    {name: '永不失联的爱',
+    artist: '周兴哲',
+    id: 37428520,
+    hasmv: 1,
+    pic:'https://img4.kuwo.cn/star/albumcover/500/15/26/1749830753.jpg'}]
+
+
+
